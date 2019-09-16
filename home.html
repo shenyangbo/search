@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!-- saved from url=(0349)http://im.189.cn/imWxPackages/packages/index.do?status=ok&openid=oBBmBjhHYzoNV8CFTMJp9IOLRaso&unionid=oCST-t_Vg4SJfXage3CF8iJ17STg&subscribe=true&cityid=58&dcityid=5&dftime=20170725145949&busno=O1OO1c=SS1O&nickname=Sean&headimgurl=http://wx.qlogo.cn/mmopen/jRoggJ2RF3AKsNJiafj1Wt89Libm6HBxIryvVnGS6j34C7hvSNuWqnaNBibNm3q4z4eYHodlQqBoyM9m1TVsGib2CA/0 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="http://im.189.cn:80/imWxPackages/">-->
+    <base href=".">
+
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" http-equiv="Content-Type">
+    <meta content="telephone=no" name="format-detection">
+    <title>中国电信广东公司</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/go.css">
+    <script src="./js/jquery-1.11.0.min.js"></script>
+
+    <!--新增弹窗js-->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/layer/layer.js"></script>
+
+
+    <style type="text/css">
+        body {
+            background: #f4f4f4;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        body .header {
+            max-width: 1080px;
+            margin: 0 auto;
+            background-color: #84c101;
+            width: 100%;
+            height: 44px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            line-height: 44px;
+            z-index: 9999;
+            position: fixed;
+            clear: both;
+            overflow: hidden;
+            _position: absolute;
+            _bottom: auto;
+            _top: expression(eval(document.documentElement.scrollTop));
+        }
+
+        body .header a {
+            height: 42px;
+            margin-top: 2px;
+            width: 44px;
+            text-align: center;
+            line-height: 44px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .tishi {
+            margin-top: 44px;
+            height: 44px;
+            width: 100%;
+            line-height: 44px;
+            padding-left: 15px;
+            background: #ffffff;
+            color: #999999;
+        }
+
+        .phone {
+            height: 60px;
+            width: 100%;
+            background: #ffffff;
+            color: #333333;
+        }
+
+        .phone div {
+            line-height: 60px;
+        }
+
+        .phone img {
+            height: 24px;
+            width: 24px;
+            /*background: #999999;*/
+            margin: 18px 15px;
+        }
+
+        .details {
+            height: 44px;
+            width: 100%;
+            background: #ffffff;
+            color: #666666;
+            font-size: 15px;
+            line-height: 44px;
+            padding: 0 15px;
+        }
+
+        .span {
+            float: right;
+            color: #7daf02;
+        }
+
+        .span2 {
+            float: right;
+            color: #ff000c;
+            text-decoration: underline;
+        }
+
+        .details img {
+            float: right;
+            height: 16px;
+            width: auto;
+            margin: 14px 0px 0 5px;
+
+        }
+
+        a:hover {
+            color: #7daf02;
+            text-decoration: none;
+        }
+
+        /*新增css*/
+        a,button{cursor:pointer;}
+        .more {
+            margin: 15px 0;
+            background: white;
+            color: #83bc07;
+            padding: 0 15px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .times {
+            text-align: center;
+            display: none;
+            padding: 30px 15px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+        }
+         button{
+            width: 100%;
+            background: #83bc07;
+            color: white;
+            line-height: 44px;
+            outline: none;
+            border: none;
+            border-radius: 22px;
+            font-size: 16px;
+        }
+        .fail{
+            text-align: center;
+            display: none;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            border-radius: 4px;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+        .fail p{
+            background-image: -moz-linear-gradient( 68deg, rgb(106,179,1) 0%, rgb(133,205,1) 100%);
+            background-image: -webkit-linear-gradient( 68deg, rgb(106,179,1) 0%, rgb(133,205,1) 100%);
+            background-image: -ms-linear-gradient( 68deg, rgb(106,179,1) 0%, rgb(133,205,1) 100%);
+            padding: 15px;
+            color: white;
+            font-size: 16px;
+        }
+        .fail span{
+            display: block;
+            font-size: 16px;
+            color: #333333;
+            margin: 15px 0;
+            padding: 15px;
+        }
+        .password{
+            text-align: center;
+            display: none;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            border-radius: 4px;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+        .password p{
+            background-image: -moz-linear-gradient( 68deg, rgb(106,179,1) 0%, rgb(133,205,1) 100%);
+            background-image: -webkit-linear-gradient( 68deg, rgb(106,179,1) 0%, rgb(133,205,1) 100%);
+            background-image: -ms-linear-gradient( 68deg, rgb(106,179,1) 0%, rgb(133,205,1) 100%);
+            padding: 15px;
+            color: white;
+            font-size: 16px;
+        }
+        .number{
+            display: block;
+            font-size: 16px;
+            color: #333333;
+            padding: 25px 15px;
+        }
+        .password input{
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #cccccc;
+            line-height: 24px;
+            padding: 0 4px;
+            width: 60%;
+        }
+        .info{
+            color: #999999;
+            font-size: 14px;
+            margin: 15px 0;
+            display: inline-block;
+        }
+         .biaoshi{
+             padding: 0 6px;color: #666666;border-radius: 4px;font-size: 11px;margin: 0;border: 1px solid #ccc;
+         }
+    </style>
+</head>
+<body>
+
+
+<div class="header fixed-top">
+    <a href="javascript:void(0);" onclick="window.location.reload();" class="float-right">
+        <img src="http://im.189.cn/xmt/images/refresh.png"/>
+    </a>
+    <a href="javascript:void(0);" onclick="backtomain('KuuJufFqT5Key1ptA_.HYD0GQvPK');" class="float-left">
+        <img src="http://im.189.cn/xmt/images/home.png"/>
+    </a>
+    在用产品
+</div>
+<script type="text/javascript">
+    function backtomain(key) {
+        window.location.href = 'http://im.189.cn/xmt/mainpage/index.do?subscribe=true&status=ok&openid=' + key;
+    }
+</script>
+
+
+<div style="margin-top: 44px">
+
+    <div class="tishi">
+        尊敬的用户 <span style="color: #333333;">用户姓名</span>，您使用的电信业务如下:
+    </div>
+
+    <!--新增button-->
+    <div class="more">查看名下所有完整号码</div>
+
+
+    <!--天翼手机-->
+    <div class="phone">
+        <img src="img/phone.png" alt="" style="margin-right: 0px">
+        天翼手机
+        <!--<img src="" alt="" style="float:right">-->
+    </div>
+    <div class="upanddown">
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <span class="biaoshi">主卡</span>
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" id="span" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open('','_self')" class="details" style="position:relative">
+                132****0176
+                <span class="biaoshi">副卡</span>
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <span class="biaoshi">副卡</span>
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="" class="span2" style="position:absolute;right:35px;top:10px;">信控停机</a>
+        </div>
+    </div>
+    <div style="background: #ededed;height:1px;margin:-1px 0 0 15px;"></div>
+
+
+    <!--固定电话-->
+    <div class="phone">
+        <img src="img/phone2.png" alt="" style="margin-right: 0px">
+        固定电话
+        <!--<img src="" alt="" style="float:right">-->
+    </div>
+    <div class="upanddown" style="display: none">
+        <div style="position:relative">
+            <div onclick="window.open('https://www.baidu.com/ ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open('https://www.baidu.com/ ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open('https://www.baidu.com/ ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="https://www.zhihu.com/" class="span2" style="position:absolute;right:35px;top:10px;">信控停机</a>
+        </div>
+    </div>
+    <div style="background: #ededed;height:1px;margin:-1px 0 0 15px;"></div>
+
+    <!--电信宽带-->
+    <div class="phone">
+        <img src="img/net.png" alt="" style="margin-right: 0px">
+        电信宽带
+        <!--<img src="" alt="" style="float:right">-->
+    </div>
+    <div class="upanddown" style="display: none">
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="" class="span2" style="position:absolute;right:35px;top:10px;">信控停机</a>
+        </div>
+    </div>
+    <div style="background: #ededed;height:1px;margin:-1px 0 0 15px;"></div>
+
+    <!--电信电视-->
+    <div class="phone">
+        <img src="img/TV.png" alt="" style="margin-right: 0px">
+        电信电视
+        <!--<img src="" alt="" style="float:right">-->
+    </div>
+    <div class="upanddown" style="display: none">
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="" class="span2" style="position:absolute;right:35px;top:10px;">信控停机</a>
+        </div>
+    </div>
+    <div style="background: #ededed;height:1px;margin:-1px 0 0 15px;"></div>
+
+    <!--其他-->
+    <div class="phone">
+        <img src="img/other.png" alt="" style="margin-right: 0px">
+        其他
+        <!--<img src="" alt="" style="float:right">-->
+    </div>
+    <div class="upanddown" style="display: none">
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="javascript:;" class="span" style="position:absolute;right:35px;top:10px;">正常</a>
+        </div>
+        <div style="position:relative">
+            <div onclick="window.open(' ','_self')" class="details" style="position:relative">
+                132****0176
+                <img src="img/arrow.png" alt="">
+            </div>
+            <a href="" class="span2" style="position:absolute;right:35px;top:10px;">信控停机</a>
+        </div>
+    </div>
+    <div style="background: #ededed;height:1px;margin:-1px 0 0 15px;"></div>
+
+
+    <div style="font-size: 16px;color: red;margin: 15px 15px 5px 15px">
+        <img src="http://im.189.cn/imWxPackages/images/wx_tishi.png" style="width: 25px"/>
+        温馨提醒:
+    </div>
+
+    <div style=";margin: 10px 15px;color: #B2B2B2">
+        1.若后付费号码已经开具过纸质月结发票，将无法再开具电子发票。<br/>
+        2.因部分手机app、浏览器pdf显示问题，扫描二维码查看发票无法显示销售方（红章）建议使用UC手机浏览器或已安装PDF的手机/电脑查看。<br/>
+        3.若预付费号码在7天内有充值成功，且未开具发票，可点击<a href="10电子发票-充值发票.html" style="color: #025FC7;">预付费开具发票</a>进行补充开。<br/>
+    </div>
+    <div style=";margin: 10px 15px;color: #B2B2B2">
+        1.若后付费号码已经开具过纸质月结发票，将无法再开具电子发票。<br/>
+        2.因部分手机app、浏览器pdf显示问题，扫描二维码查看发票无法显示销售方（红章）建议使用UC手机浏览器或已安装PDF的手机/电脑查看。<br/>
+        3.若预付费号码在7天内有充值成功，且未开具发票，可点击<a href="10电子发票-充值发票.html" style="color: #025FC7;">预付费开具发票</a>进行补充开。<br/>
+    </div>
+    <div style=";margin: 10px 15px;color: #B2B2B2">
+        1.若后付费号码已经开具过纸质月结发票，将无法再开具电子发票。<br/>
+        2.因部分手机app、浏览器pdf显示问题，扫描二维码查看发票无法显示销售方（红章）建议使用UC手机浏览器或已安装PDF的手机/电脑查看。<br/>
+        3.若预付费号码在7天内有充值成功，且未开具发票，可点击<a href="10电子发票-充值发票.html" style="color: #025FC7;">预付费开具发票</a>进行补充开。<br/>
+    </div>
+
+    <!--新增弹窗-->
+    <div id="result_times" class="times">
+        <p>对不起，您的微信账号已达到操作次数上限，请于明天再试</p>
+        <br>
+        <button onclick="closeLayer()" >确认</button>
+    </div>
+
+    <div id="result_fail" class="fail">
+        <p>
+            验证客户密码后，将可以 <br>查询您名下所有完整号码
+        </p>
+        <span>很抱歉，您的密码验证失败，请核对密码后重新输入</span>
+        <button  onclick="closeLayer()" style="width: 90%;margin: 0 5%;">确认</button>
+    </div>
+
+
+    <div id="password" class="password">
+        <p>
+            验证客户密码后，将可以 <br>查询您名下所有完整号码
+        </p>
+        <span class="number">您的当前号码：18945623265</span>
+        <input type="password" placeholder="请输入客户密码"> <a href="" style="font-size: 14px">忘记密码</a>
+        <br>
+        <span class="info">此次验证客户密码后，将同步关联当前号码</span>
+        <button  onclick="closeLayer()" style="width: 90%;margin: 0 5%;">确认</button>
+    </div>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        'use strict';
+        $('.phone').on("click", function () {
+            $(this).next().slideToggle(100);
+            $('.upanddown').not($(this).next()).slideUp('fast');
+        });
+    }(jQuery));
+
+    $(".more").on("click",function () {
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 1,
+            area: ['80%', 'auto'],
+            shadeClose: true,
+            content: $('#result_fail')
+        });
+
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 1,
+            area: ['80%', 'auto'],
+            shadeClose: true,
+            content: $('#result_times')
+        });
+
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 1,
+            area: ['80%', 'auto'],
+            shadeClose: true,
+            content: $('#password')
+        });
+        function closeLayer() {
+            layer.close(layer.index);
+        }
+    })
+
+    ;
+
+
+    //ios 兼容，input失去焦点后界面上移不恢复的问题
+    $(".weui-input").blur(function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+
+</body>
+</html>

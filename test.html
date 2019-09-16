@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+</head>
+<body>
+ <p>
+     <span>sadfsdf</span>
+     <i>
+         sfad
+     </i>
+     <a href="#">示例</a>
+ </p>
+
+ <p>
+     <span>sadfsdf</span>
+     <i>asdf</i>
+     <a href="#">示例</a>
+ </p>
+
+
+ <script>
+     $("a").on("click",function () {
+        $(this).prevAll("span").innerHTML()
+     })
+ </script>
+</body>
+</html>
